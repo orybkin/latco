@@ -1,0 +1,460 @@
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> -->
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  div {
+    max-width: 95%;
+    margin:auto;
+    padding: 10px;
+  }
+
+  .table-like {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    max-width: 1100px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VC104QM02"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VC104QM02');
+  </script>
+
+  <div max-width=100%>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="resources/seal_icon.png">
+  <title>Model-Based Reinforcement Learning via Latent-Space Collocation</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://orybkin.github.io/" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <meta property="og:site_name" content="LatCo" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Model-Based Reinforcement Learning via Latent-Space Collocation" />
+  <meta property="og:description" content="Rybkin, Zhu, Nagabandi, Daniilidis, Mordatch, Levine. Model-Based Reinforcement Learning via Latent-Space Collocation. 2020." />
+  <meta property="og:url" content="https://orybkin.github.io/" />
+  <meta property="og:image" content="https://orybkin.github.io/latco/resources/teaser.jpg" />
+  <meta property="og:video" content="https://www.youtube.com/v/skc0e4KYNcw" />
+
+  <meta property="article:publisher" content="https://orybkin.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Model-Based Reinforcement Learning via Latent-Space Collocation" />
+  <meta name="twitter:description" content="Rybkin, Zhu, Nagabandi, Daniilidis, Mordatch, Levine. Model-Based Reinforcement Learning via Latent-Space Collocation. 2020." />
+  <meta name="twitter:url" content="https://orybkin.github.io/" />
+  <meta name="twitter:image" content="https://orybkin.github.io/latco/resources/teaser.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:image" content="https://orybkin.github.io/latco/resources/teaser.jpg" />
+  <meta name="twitter:player" content="https://www.youtube.com/embed/skc0e4KYNcw?rel=0&showinfo=0" />
+  <meta name="twitter:player:width" content="640" />
+  <meta name="twitter:player:height" content="360" />
+</head>
+
+<body>
+
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;">Model-Based Reinforcement Learning <br/> via Latent-Space Collocation</span></center><br/>
+      <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+          <div><center><span style="font-size:18px"><a href="https://www.seas.upenn.edu/~oleh/" target="_blank">Oleh Rybkin*</a></span></center>
+          <center><span style="font-size:18px">UPenn</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://www.seas.upenn.edu/~zchuning/" target="_blank">Chuning Zhu*</a></span></center>
+          <center><span style="font-size:18px">UPenn</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://www.linkedin.com/in/anusha-nagabandi-a4923bba" target="_blank">Anusha Nagabandi</a></span></center>
+          <center><span style="font-size:18px">Covariant</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://www.cis.upenn.edu/~kostas/" target="_blank">Kostas Daniilidis</a></span></center>
+          <center><span style="font-size:18px">UPenn</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://twitter.com/imordatch" target="_blank">Igor Mordatch</a></span></center>
+          <center><span style="font-size:18px">Google</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a></span></center>
+          <center><span style="font-size:18px">UC Berkeley</span></center>
+          </div>
+      </div>
+      <table align=center width=30% style="padding-top:0px;padding-bottom:0px">
+          <tr>
+            <td align=center><center><span style="font-size:15px">* equal contribution</span></center></td>
+          <tr/>
+      </table>
+      <center><span style="font-size:20px;"><a href='https://icml.cc/Conferences/2021'>International Conference on Machine Learning (ICML), 2021</a></span></center>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        <div><center><span style="font-size:28px"><a href="https://arxiv.org/pdf/2006.13205.pdf">[Paper]</a></span></center></div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/zchuning/latco'>[Method Code]</a></span></center> </div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/zchuning/metaworld'>[Env Code]</a></span></center> </div>
+      </div>
+
+      <center>
+      <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/skc0e4KYNcw?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+      <br>
+
+      <div style="width:800px; margin:0 auto; text-align=right;">
+        The ability to plan into the future while utilizing only raw high-dimensional observations, such as images, can provide autonomous agents with broad capabilities.
+        Visual model-based reinforcement learning (RL) methods that plan future actions directly have shown impressive results on tasks that require only short-horizon reasoning, however, these methods struggle on temporally extended tasks. We argue that it is easier to solve long-horizon tasks by planning sequences of states rather than just actions, as the effects of actions greatly compound over time and are harder to optimize.
+        To achieve this, we draw on the idea of collocation, which has shown good results on long-horizon tasks in optimal control literature, and adapt it to the image-based setting by utilizing learned latent state space models.
+        The resulting latent collocation method (LatCo) optimizes trajectories of latent states, which improves over previously proposed shooting methods for visual model-based RL on tasks with sparse rewards and long-term goals.
+      </div>
+      <br><hr>
+
+      <center><h1>Latent Trajectory Optimization</h1>
+      <a href="resources/teaser.mp4"><video src="resources/teaser.mp4" width="800px" autoplay muted loop></video></a></center>
+      <div style="width:800px; margin:0 auto; text-align=right">
+         Latent collocation (LatCo) on a tool use task, where the thermos needs to be pushed with the stick. Each image shows a full plan at that optimization step, visualized via a diagnostic network. LatCo optimizes a latent state sequence and is able to temporarily violate the dynamics during planning, such as the stick flying in the air without an apparent cause. This allows it to rapidly discover the high-reward regions, while the subsequent refinement of the planned trajectory focuses on feasibly achieving it. In contrast, shooting optimizes an action sequence directly and is unable to discover picking the stick as the actions that lead to that are unlikely to be sampled.
+      </div>
+      <!-- <div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:auto;padding:0px">
+        <div style="max-width:370px">
+          <center><h2> Latent Collocation (LatCo) </h2></center>
+          <a href="resources/results/h36_rec.mp4"><video src="resources/opt_full.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+        <div style="max-width:370px">
+          <center><h2> CEM Shooting (PlaNet) </h2></center>
+          <a href="resources/results/h36_rec.mp4"><video src="resources/opt_cem_full.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+      </div> -->
+      <center id="sourceCode"><h2>More LatCo Examples</h2></center>
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div style="max-width:250px">
+          <center><h3> Thermos </h3></center>
+          <a href="resources/mod2_opt_mug.mp4"><video src="resources/mod2_opt_mug.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+        <div style="max-width:250px">
+          <center><h3> Hammer </h3></center>
+          <a href="resources/mod2_hammer_opt.mp4"><video src="resources/mod2_hammer_opt.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+        <div style="max-width:250px">
+          <center><h3> Push </h3></center>
+          <a href="resources/opt_push.mp4"><video src="resources/opt_push.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+        <div style="max-width:250px">
+          <center><h3> Push </h3></center>
+          <a href="resources/opt_push2.mp4"><video src="resources/opt_push2.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+      </div>
+      <hr>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><h1>Overview of the Algorithm</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        We propose a visual model-based reinforcement method that optimizes sequences of latent states using a constrained optimization objective. First, a latent dynamics model is learned from images using an approximate maximum likelihood objective (left). While shooting (bottom) optimizes actions directly, LatCo (top) instead optimizes a sequence of latent states to maximize the reward. The latent states are constrained to be dynamically feasible by recovering the corresponding sequence of actions and enforcing the dynamics. Dual descent on the Lagrangian is used to solve the constrained optimization problem.
+      </div>
+      <br/>
+          <center><a href="resources/method.png"><img src = "resources/method.png" width="1100px"></img></a><br></center>
+      <br/><hr>
+
+
+      <center id="sourceCode"><h1>LatCo Results</h1></center>
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div style="width:70px"> Execution </div>
+        <div style="max-width:970px">
+          <a href="resources/results/modcombined_tasks_latco_exec_0.mp4"><video src="resources/results/modcombined_tasks_latco_exec_0.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+
+        <div style="width:70px"> Plan </div>
+        <div style="max-width:970px">
+          <a href="resources/results/modcombined_tasks_latco_plan_0.mp4"><video src="resources/results/modcombined_tasks_latco_plan_0.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+      </div>
+
+      </br><br>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div style="width:70px"> Execution </div>
+        <div style="max-width:970px">
+          <a href="resources/results/modcombined_tasks_latco_exec_1.mp4"><video src="resources/results/modcombined_tasks_latco_exec_1.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+
+        <div style="width:70px"> Plan </div>
+        <div style="max-width:970px">
+          <a href="resources/results/modcombined_tasks_latco_plan_1.mp4"><video src="resources/results/modcombined_tasks_latco_plan_1.mp4" width="100%" autoplay muted loop></video></a>
+        </div>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        Our method performs these seven challenging sparse reward and long-horizon tasks directly from image input. While prior work on model-based reinforcement learning struggles with long-horizon tasks, latent collocation (LatCo) plans sequences of latent states using a constrained optimization objective, which enables is to escape local minima and make effective visual plans even for complex multiple-stage tasks like Thermos and Hammer.
+      </div></br><hr>
+
+
+
+      <center id="sourceCode"><h1>Comparisons - Hammer</h1></center>
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div>
+          <center><h3> LatCo </h3></center>
+          <div class="table-like" style="justify-content:space-evenly;max-width:300px;margin:auto;padding:0px">
+          <div style="width:150px;padding:0px">Execution</div>
+          <div style="width:150px;padding:0px">Plan</div>
+          </div>
+          <a href="resources/results/modcombined_baselines_hammer_.mp4"><video src="resources/results/modcombined_baselines_hammer_.mp4" width="300px" autoplay muted loop></video></a>
+        </div>
+
+        <div>
+          <center><h3> Shooting CEM (PlaNet, Hafner'19) </h3></center>
+          <div class="table-like" style="justify-content:space-evenly;max-width:300px;margin:auto;padding:0px">
+          <div style="width:150px;padding:0px">Execution</div>
+          <div style="width:150px;padding:0px">Plan</div>
+          </div>
+          <a href="resources/results/modcombined_baselines_hammer_cem.mp4"><video src="resources/results/modcombined_baselines_hammer_cem.mp4" width="300px" autoplay muted loop></video></a>
+        </div>
+
+        <div>
+          <center><h3> Shooting GD </h3></center>
+          <div class="table-like" style="justify-content:space-evenly;max-width:300px;margin:auto;padding:0px">
+          <div style="width:150px;padding:0px">Execution</div>
+          <div style="width:150px;padding:0px">Plan</div>
+          </div>
+          <a href="resources/results/modcombined_baselines_hammer_gd.mp4"><video src="resources/results/modcombined_baselines_hammer_gd.mp4" width="300px" autoplay muted loop></video></a>
+        </div>
+      </div>
+
+      <center id="sourceCode"><h1>Comparisons - Thermos</h1></center>
+      <!-- <div style="font-size:25px;padding:0px"><center>Thermos</center></div> -->
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div>
+          <center><h3> LatCo </h3></center>
+          <div class="table-like" style="justify-content:space-evenly;max-width:300px;margin:auto;padding:0px">
+          <div style="width:150px;padding:0px">Execution</div>
+          <div style="width:150px;padding:0px">Plan</div>
+          </div>
+          <a href="resources/results/modcombined_baselines_thermos_.mp4"><video src="resources/results/modcombined_baselines_thermos_.mp4" width="300px" autoplay muted loop></video></a>
+        </div>
+
+        <div>
+          <center><h3> Shooting CEM (PlaNet, Hafner'19) </h3></center>
+          <div class="table-like" style="justify-content:space-evenly;max-width:300px;margin:auto;padding:0px">
+          <div style="width:150px;padding:0px">Execution</div>
+          <div style="width:150px;padding:0px">Plan</div>
+          </div>
+          <a href="resources/results/modcombined_baselines_thermos_cem.mp4"><video src="resources/results/modcombined_baselines_thermos_cem.mp4" width="300px" autoplay muted loop></video></a>
+        </div>
+
+        <div>
+          <center><h3> Shooting GD </h3></center>
+          <div class="table-like" style="justify-content:space-evenly;max-width:300px;margin:auto;padding:0px">
+          <div style="width:150px;padding:0px">Execution</div>
+          <div style="width:150px;padding:0px">Plan</div>
+          </div>
+          <a href="resources/results/modcombined_baselines_thermos_gd.mp4"><video src="resources/results/modcombined_baselines_thermos_gd.mp4" width="300px" autoplay muted loop></video></a>
+        </div>
+      </div>
+
+      <div style="width:800px; margin:0 auto; text-align=right">
+        The Thermos and Hammer tasks require picking up a tool and using it to manipulate another object. The sparse reward is only given after completing the full task, and the planner needs to infer all stages required to solve the task. While LatCo can solve both of these challenging tasks, prior shooting methods fail to find a good trajectory.
+      </div></br><hr>
+
+      <center id="sourceCode"><h1>Source Code</h1></center>
+      <div style="width:800px; margin:0 auto; text-align=right">
+      Try our implementation of LatCo in TensorFlow 2 as well as the Sparse MetaWorld environment below!
+      </div>
+      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        <div><center><span style="font-size:28px"><a href='https://github.com/zchuning/latco'>[Method Code]</a></span></center> </div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/zchuning/metaworld'>[Env Code]</a></span></center> </div>
+      </div>
+      <br><hr>
+
+      <table align=center width=850px>
+        <center><h1>Paper and Bibtex</h1></center>
+        <tr>
+        <td width=350px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <a href="https://arxiv.org/pdf/2006.13205.pdf"><img style="height:150px" src="resources/thumbnail.jpg"/></a>
+        <center>
+        <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2006.13205.pdf">[Paper]</a>
+        <span style="font-size:20pt"><a href="https://arxiv.org/abs/2006.13205">[ArXiv]</a>
+        <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span>
+        <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
+        </center>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Oleh Rybkin, Chuning Zhu, Anusha Nagabandi, Kostas Daniilidis, Igor Mordatch, Sergey Levine. <b>Model-Based Reinforcement Learning via Latent-Space Collocation. ICML, 2020.<br/></b></span></p>
+        <!-- <p style="margin-top:20px;"></p> -->
+        <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('gcp2020_bib')" class="togglebib">[Bibtex]</a></span>
+        </td>
+        </tr>
+        <tr>
+        <td width=250px align=left>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+          <div class="paper" id="gcp2020_bib">
+<pre xml:space="preserve">
+@misc{rybkin2020model,
+    title={Model-Based Reinforcement Learning
+    via Latent-Space Collocation},
+    author={Rybkin, Oleh and Zhu, Chuning and
+    Nagabandi, Anusha and Daniilidis, Kostas
+    and Mordatch, Igor and Levine, Sergey},
+    booktitle={International Conference on
+    Machine Learning (ICML)},
+    year={2021}
+}</pre>
+          </div>
+          </td>
+          </tr>
+      </table>
+    <br><hr>
+
+
+      <!-- <div style="width:800px; margin:0 auto; text-align=center">
+        <br>
+        <center>Code and full paper to be released soon.</center>
+      </div> -->
+      </table>
+
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</div>
+</body>
+</html>
